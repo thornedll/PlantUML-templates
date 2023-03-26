@@ -1,0 +1,213 @@
+'Colors
+'Black - #181D27
+'Lvl1 - #FFF8E8
+'Lvl2 - #FFEBB8
+'Lvl3 - #FFDB80
+
+<style>
+    .parent {
+        BackgroundColor #FFF8E8
+    }
+</style>
+
+hide <<parent>> stereotype
+
+'Node
+skinparam NodeFontColor #181D27
+skinparam NodeBackgroundColor #FFEBB8
+skinparam NodeBorderColor #181D27
+skinparam NodeFontStyle bold
+skinparam NodeBorderThickness 2
+skinparam NodeFontSize 14
+skinparam NodeFontName Muller Regular
+skinparam NodeAttributeFontName Muller Regular
+skinparam NodeAttributeFontSize 13
+
+'Actor
+skinparam ActorBackgroundColor #FFF8E8
+skinparam ActorBorderColor #181D27
+skinparam ActorBorderThickness 2
+skinparam ActorFontColor #181D27
+skinparam ActorFontStyle bold
+skinparam ActorFontName Muller Regular
+skinparam ActorStereotypeFontName Muller Regular
+'Arrow
+skinparam ArrowColor #181D27
+skinparam ArrowThickness 2
+skinparam ArrowFontColor #181D27
+skinparam ArrowFontSize 12
+skinparam ArrowFontStyle bold
+skinparam ArrowFontName Muller Regular
+skinparam ArrowStyle bold
+'Note
+skinparam NoteBackgroundColor White
+skinparam NoteBackgroundColor #FFF8E8
+skinparam NoteBorderColor #181D27
+skinparam NoteBorderThickness 2
+skinparam NoteFontColor #181D27
+skinparam NoteFontSize 14
+skinparam NoteFontName Muller Regular
+'Package
+skinparam PackageFontColor #181D27
+skinparam PackageBackgroundColor #FFF8E8
+skinparam PackageFontName Muller Regular
+skinparam PackageFontSize 16
+'Rectangle
+skinparam RectangleFontColor #181D27
+skinparam RectangleBackgroundColor #FFF8E8
+skinparam RectangleBorderColor #181D27
+skinparam RectangleFontStyle bold
+skinparam RectangleBorderThickness 2
+skinparam RectangleFontSize 14
+skinparam RectangleFontName Muller Regular
+skinparam RectangleAttributeFontName Muller Regular
+skinparam RectangleAttributeFontSize 13
+'Legend
+skinparam LegendBackgroundColor #FFF8E8
+skinparam LegendBorderColor #181D27
+skinparam LegendFontName Muller Regular
+'Usecase
+skinparam UsecaseFontColor #181D27
+skinparam UsecaseBackgroundColor #FFDB80
+skinparam UsecaseBorderColor #181D27
+skinparam UsecaseFontStyle bold
+skinparam UsecaseBorderThickness 2
+skinparam UsecaseFontSize 14
+skinparam UsecaseFontName Muller Regular
+'Class
+skinparam ClassFontColor #181D27
+skinparam ClassBackgroundColor #FFDB80
+skinparam ClassBorderColor #181D27
+skinparam ClassFontStyle bold
+skinparam ClassBorderThickness 2
+skinparam ClassFontSize 14
+skinparam ClassFontName Muller Regular
+skinparam ClassAttributeFontName Muller Regular
+skinparam ClassAttributeFontSize 13
+'Sequence
+skinparam ParticipantFontColor #181D27
+skinparam ParticipantBackgroundColor #FFDB80
+skinparam ParticipantBorderColor #181D27
+skinparam ParticipantFontStyle bold
+skinparam ParticipantBorderThickness 2
+skinparam ParticipantFontSize 14
+skinparam ParticipantFontName Muller Regular
+'Life Line
+skinparam sequence {
+    LifeLineBackgroundColor #FFDB80
+    LifeLineBorderColor #181D27
+}
+'Database
+skinparam DatabaseFontColor #181D27
+skinparam DatabaseBackgroundColor #FFEBB8
+skinparam DatabaseBorderColor #181D27
+skinparam DatabaseFontStyle bold
+skinparam DatabaseBorderThickness 2
+skinparam DatabaseFontSize 14
+skinparam DatabaseFontName Muller Regular
+skinparam DatabaseAttributeFontName Muller Regular
+skinparam DatabaseAttributeFontSize 13
+'Component
+skinparam ComponentFontColor #181D27
+skinparam ComponentBackgroundColor #FFDB80
+skinparam ComponentBorderColor #181D27
+skinparam ComponentFontStyle bold
+skinparam ComponentBorderThickness 2
+skinparam ComponentFontSize 14
+skinparam ComponentFontName Muller Regular
+skinparam ComponentAttributeFontName Muller Regular
+skinparam ComponentAttributeFontSize 13
+'Interface
+skinparam InterfaceFontColor #181D27
+skinparam InterfaceBackgroundColor #FFDB80
+skinparam InterfaceBorderColor #181D27
+skinparam InterfaceFontStyle bold
+skinparam InterfaceBorderThickness 2
+skinparam InterfaceFontSize 14
+skinparam InterfaceFontName Muller Regular
+skinparam InterfaceAttributeFontName Muller Regular
+skinparam InterfaceAttributeFontSize 13
+'Header
+skinparam HeaderFontName Muller Regular
+skinparam HeaderFontSize 12
+skinparam HeaderFontColor #181D27
+'Artifact
+skinparam ArtifactFontColor #181D27
+skinparam ArtifactBackgroundColor #FFDB80
+skinparam ArtifactBorderColor #181D27
+skinparam ArtifactFontStyle bold
+skinparam ArtifactBorderThickness 2
+skinparam ArtifactFontSize 14
+skinparam ArtifactFontName Muller Regular
+skinparam ArtifactAttributeFontName Muller Regular
+skinparam ArtifactAttributeFontSize 13
+'State
+skinparam StateFontColor #181D27
+skinparam StateBackgroundColor #FFDB80
+skinparam StateBorderColor #181D27
+skinparam StateFontStyle bold
+skinparam StateBorderThickness 2
+skinparam StateFontSize 14
+skinparam StateFontName Muller Regular
+skinparam StateAttributeFontName Muller Regular
+skinparam StateAttributeFontSize 13
+
+'File
+skinparam FileBackgroundColor White
+skinparam FileBackgroundColor #FFDB80
+skinparam FileBorderColor #181D27
+skinparam FileBorderThickness 2
+skinparam FileFontColor #181D27
+skinparam FileFontSize 14
+skinparam FileFontName Muller Regular
+skinparam FileFontStyle bold
+
+'Activity
+skinparam ActivityFontColor #181D27
+skinparam ActivityBackgroundColor #FFDB80
+skinparam ActivityBorderColor #181D27
+skinparam ActivityFontStyle bold
+skinparam ActivityBorderThickness 2
+skinparam ActivityFontSize 16
+skinparam ActivityFontName Muller Regular
+skinparam ActivityAttributeFontName Muller Regular
+skinparam ActivityAttributeFontSize 13
+
+'Collections
+skinparam CollectionsBackgroundColor White
+skinparam CollectionsBackgroundColor #FFDB80
+skinparam CollectionsBorderColor #181D27
+skinparam CollectionsBorderThickness 2
+skinparam CollectionsFontColor #181D27
+skinparam CollectionsFontSize 14
+skinparam CollectionsFontName Muller Regular
+skinparam CollectionsFontStyle bold
+
+'Cloud
+skinparam CloudFontColor #181D27
+skinparam CloudBackgroundColor #FFEBB8
+skinparam CloudBorderColor #181D27
+skinparam CloudFontStyle bold
+skinparam CloudBorderThickness 2
+skinparam CloudFontSize 14
+skinparam CloudFontName Muller Regular
+skinparam CloudAttributeFontName Muller Regular
+skinparam CloudAttributeFontSize 13
+
+'Control
+skinparam ControlBackgroundColor #FFF8E8
+skinparam ControlBorderColor #181D27
+skinparam ControlBorderThickness 2
+skinparam ControlFontColor #181D27
+skinparam ControlFontStyle bold
+skinparam ControlFontName Muller Regular
+skinparam ControlStereotypeFontName Muller Regular
+
+'Boundary
+skinparam BoundaryBackgroundColor #FFF8E8
+skinparam BoundaryBorderColor #181D27
+skinparam BoundaryBorderThickness 2
+skinparam BoundaryFontColor #181D27
+skinparam BoundaryFontStyle bold
+skinparam BoundaryFontName Muller Regular
+skinparam BoundaryStereotypeFontName Muller Regular

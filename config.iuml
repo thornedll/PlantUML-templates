@@ -1,0 +1,47 @@
+@startuml
+
+' CONSTANTS
+!$PATH_TO_STYLES = "/users/user/desktop/Garpix/garpix_styles.iuml"
+
+' DIRECTION
+' left to right direction
+
+' VARIABLES
+
+' STYLES
+!include $PATH_TO_STYLES
+
+' FUNCTIONS
+' Объявление элемента
+!procedure $declaration($type, $name, $short_name)
+    $type "$name" as $short_name
+!endprocedure
+
+' Комментарий (В ОДНУ СТРОЧКУ)
+!procedure $comment($content, $position)
+    note $position
+        $content
+    end note
+!endprocedure
+
+' Соединение со стрелкой
+!procedure $solid($source, $destination, $directory)
+    $source -$directory-> $destination
+!endprocedure
+
+' Соединение без стрелок
+!procedure $line($source, $destination, $directory)
+    $source -$directory- $destination
+!endprocedure
+
+' Пунктирное соединение со стрелкой
+!procedure $dotted($source, $destination, $directory)
+    $source .$directory.> $destination
+!endprocedure
+
+' Аггреация
+!procedure $aggregation($source, $destination, $directory)
+    $source -$directory-|> $destination
+!endprocedure
+
+@enduml

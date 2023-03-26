@@ -1,0 +1,63 @@
+@startuml
+
+!include config.iuml
+
+actor Пользователь as user
+boundary Frontend as frontend
+control Backend as backend
+database Database as db
+participant Jira as jira
+
+user -> frontend : Перейти на детальную\nстраницу тест-плана
+activate frontend
+frontend -> backend : Сделать запрос на\nполучение URL страницы
+activate backend
+backend --> frontend : URL страницы
+deactivate backend
+frontend --> user : Отобразить детальную\nстраницу тест-плана
+user -> frontend : Нажать на кнопку\n"Создать/привязать историю\nиз системы трекинга"
+frontend --> user : Отобразить модальное окно\nс выбором опций
+alt Создать новую историю
+    user -> frontend : Выбрать опцию\n"Создать новую историю"
+    frontend --> user : Отобразить форму\nсоздания истории
+    user -> frontend : Заполнить поля\nсоздания истории
+    user -> frontend : Нажать на кнопку\n"Создать историю"
+    frontend -> frontend : Валидация\nвведенных данных
+    frontend -> backend : Запрос на создание\nистории в Jira
+    activate backend
+    backend -> jira : Запрос на создание\nистории в Jira
+    activate jira
+    jira -> jira : Создание истории
+    jira --> backend : Ответ об успешном\nсоздании истории
+    deactivate jira
+    backend --> db : Привязка новой\nистории к тест-плану
+    activate db
+    deactivate db
+    backend --> frontend : Ответ об успешном\nсоздании и привязки\nистории к тест-плану
+    deactivate backend
+    frontend --> user : Отобразить сообщение об\nуспешном создании истории и\nпривязке к тест-плану
+else Привязать существующую историю
+    user -> frontend : Выбрать опцию\n"Привязать существующую историю"
+    frontend -> backend : Запрос на поиск\nисторий в проекте
+    activate backend
+    backend -> jira : Запрос на поиск\nисторий в проекте
+    activate jira
+    jira -> jira : Поиск историй\nв проекте
+    jira --> backend : Найденные истории\nв проекте
+    deactivate jira
+    backend --> frontend : Найденные истории\nв проекте
+    deactivate backend
+    frontend --> user : Отобразить найденные\nистории в проекте
+    user -> frontend : Выбрать историю\nв проекте
+    frontend -> backend : Запрос на привязку\nвыбранной истории к\nтест-плану
+    activate backend
+    backend --> db : Привязка выбранной\nистории к тест-плану
+    activate db
+    deactivate db
+    backend --> frontend : Ответ об успешной\nпривязке истории к тест-плану
+    deactivate backend
+    frontend --> user : Отобразить сообщение об\nуспешной привязке\nистории к тест-плану
+    deactivate frontend
+end
+
+@enduml
