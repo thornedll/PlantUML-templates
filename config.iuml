@@ -1,7 +1,8 @@
 @startuml
 
 ' CONSTANTS
-!$PATH_TO_STYLES = "/users/user/desktop/Garpix/garpix_styles.iuml"
+'! Путь должен быть полным (C:\... для Windows, /users/... для MacOS)
+!$PATH_TO_STYLES = "/.../styles.iuml"
 
 ' DIRECTION
 ' left to right direction
